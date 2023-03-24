@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gi FORM</title>
+    <style>
+        *{
+            padding: 0px;
+            margin:0px;
+            box-sizing: border-box;
+            font-family: Arial;
+        }
+        body{
+            text-align: center;;
+            height: 1000px;
+            color:rgb(255, 255, 255);
+            background:linear-gradient(99deg,#7ba0d7,#8c7ac4);
+        }
+        label{
+            display: block;
+            padding:5px;
+        }
+        div div label{
+            display:inline-block;
+        }
+        button{
+            padding:12px 15px;
+            border-radius: 20px;
+            border:none;
+            margin-bottom: 40px;;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        button:hover{
+            color:white;
+            background-color: black;
+        }
+        button:active{
+            opacity: 50%;;
+        }
+       
+    </style>
+</head>
+<body>
+    <div>
+        <form action="">
+            <fieldset>
+            <legend>GENSHIN ACCOUNT REGISTRAION</legend>
+            
+            <label for="FN">
+                First Name
+            </label>
+            <input id="FN" type="text" required maxlength="30">
+            <label for="LN">
+                Last Name
+            </label>
+            <input id="LN" required type="text">
+            <label>
+                E-mail
+            </label>
+            <input type="email"  required>
+            <label>
+                Phone Number
+            </label>
+            <input type="number" required>
+            <label for="date">
+                Date Of Birth
+            </label>
+            <input type="date" required id="date">
+            <div>
+            <label style="display:block">
+                Element Type:
+            </label>
+            <label><input type="radio" name="element" >Cryo</label>
+            <label> <input checked type="radio" name="element" >Anemo</label>
+                <label><input type="radio" name="element" >Pryo</label>
+                    <label> <input type="radio" name="element" >Dendro</label>
+                        <label> <input type="radio" name="element" >Electro</label>
+                    </div>
+                        <label>
+                Character Type:
+            </label>
+            <select class=".type">
+                <option >Default</option>
+                <option>5 Star</option>
+                <option>4 Star</option>
+                <option>3 Star</option>
+                <option>None</option>
+            </select>
+            
+            <label>
+                <input id="agree" type="checkbox">
+            <label style="display:inline-block" for="agree">
+                I Agree
+            </label>
+           </label>
+            <button type="submit">Register Now!</button>
+        </fieldset>
+        </form>
+    </div>
+</body>
+</html>
